@@ -547,13 +547,14 @@ button:focus{
 }
 
 .send-letter__form button{
-    border: 1px solid #c22938;
+    border: 2px solid #c22938;
     background: transparent;
     height: inherit;
     width: 28%;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
-    margin-left: 10px;
+    margin-left: 8px;
+    text-transform: uppercase;
 }
 
 .footer{
@@ -595,7 +596,7 @@ button:focus{
     font-size: inherit;
 }
 .content-info-text p{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 }
 
