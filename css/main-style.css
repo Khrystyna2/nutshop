@@ -96,7 +96,7 @@ button:focus{
 }
 
 .logo{
-    line-height: 0;
+    position: relative;
     margin-top: 25px;
     width: 88%;
 }
@@ -112,6 +112,8 @@ button:focus{
     color: #a72d3a;
     text-transform: uppercase;
     padding-left: 28px;
+    position: absolute;
+    bottom: 0;
 }
 
 .wrap-icon{
