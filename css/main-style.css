@@ -834,7 +834,7 @@ button:focus{
         position: relative;
     }
     .menu-item:last-of-type{
-        padding-right: 7px;
+        padding-right: 15px;
     }
 
     .menu.open{
@@ -996,5 +996,39 @@ button:focus{
         margin-right: 10px;
         width: 65px;
         height: 65px;
+    }
+
+    .send-letter__form button{
+        display: none;
+    }
+    .send-letter__form input{
+        width: 100%;
+    }
+    .send-letter__form{
+        position: relative;
+    }
+    .send-letter__form::after{
+        content: '';
+        height: inherit;
+        width: 40px;
+        background: #c22938;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .send-letter__form::before{
+        content: '';
+        position: absolute;
+        right: 13px;
+        top: 8px;
+        width: 10px;
+        height: 18px;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 10;
     }
 }
