@@ -835,7 +835,7 @@ button:focus{
     .menu-icon{
         display: flex;
         justify-content: flex-end;
-        color: red;
+        color: #c22938;
         font-size: 34px;
         position: absolute;
         top: -85px;
