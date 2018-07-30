@@ -196,7 +196,7 @@ button:focus{
     height: auto;
     overflow: visible; border: 3px solid #2b2a32;
 }
-.wrapper-menu__categories h4, .wrapper-menu__popular h4{
+/* .wrapper-menu__categories h4, .wrapper-menu__popular h4{
     margin-top: 30px;
     padding-left: 50px;
     font-size: 1.125em;
@@ -210,34 +210,34 @@ button:focus{
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
-}
+} */
 .wrapper-menu__categories-img{
     width: 260px;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
 }
 .wrapper-menu__categories-img img{
     margin: auto;
     display: block;
 }
 .wrapper-menu__categories{
-    width: 340px;
+    width: 70%;
     border-right: 1px solid #f7f7f7;
 }
-.wrapper-menu__categories, .wrapper-menu__popular{
-    padding-bottom: 40px;
+.wrapper-menu__categories{
+    padding: 35px 0;
     color: #2b2a32;
 }
-.wrapper-menu__categories_categ ul li, .wrapper-menu__popular_categ ul li{
+.wrapper-menu__categories_categ ul li{
     font-size: 1em;
     text-transform: none;
     list-style: none;
-    padding-left: 50px;
+    padding: 7px 0 ;
     font-weight: normal;
 }
-.wrapper-menu__categories_categ ul li a, .wrapper-menu__popular_categ ul li a{
+.wrapper-menu__categories_categ ul li a{
     color: inherit;
 }
-.wrapper-menu__categories_categ ul li a:hover, .wrapper-menu__popular_categ ul li a:hover{
+.wrapper-menu__categories_categ ul li a:hover{
     color: #009e3b;
 }
 /*попап меню*/
@@ -245,7 +245,6 @@ button:focus{
 /*попап тнлнфони*/
 #phone{
     background: #009e3b;
-    border: 2px solid #fff;
     width: 100%;
     /* height: 50vh; */
     position: relative;
@@ -319,6 +318,7 @@ button:focus{
 }
 
 #phone.open{
+    border: 2px solid #fff;
     height: auto;
     overflow: visible;
 }
@@ -790,22 +790,10 @@ button:focus{
     .baner-title p{
         font-size: 1.25em;
     }
-    .wrapper-menu__categories_categ, .wrapper-menu__popular_categ{
-        justify-content: space-around;
-    }
-
-    .wrapper-menu__categories_categ ul, .wrapper-menu__popular_categ ul{
-       padding-left: 0;
-    }
-    .wrapper-menu__categories {
-        width: 31%;
-    }
-    .wrapper-menu__popular{
-        width: 45%;
-    }
-    .wrapper-menu__categories h4, .wrapper-menu__popular h4{
+    
+    /* .wrapper-menu__categories h4, .wrapper-menu__popular h4{
         padding-left: 29px;
-    }
+    } */
     .input-search {
         width: 100%;
     }
@@ -817,6 +805,9 @@ button:focus{
     }
     .carts .counter{
         left: 16px;
+    }
+    .send-letter__form button{
+        font-size: 14px;
     }
 
 }
@@ -872,6 +863,9 @@ button:focus{
         font-size: 90px;
         right: 5px;
         top: 3px;
+    }
+    .send-letter__form button{
+        font-size: 14px;
     }
 }
 
@@ -1023,9 +1017,12 @@ button:focus{
         width: 90%;
         margin-top: 15px;
     }
-    .phone{
-        padding-left: 45px;
+    .logo{
+        margin-top: 10px;
     }
+    /* .phone{
+        padding-left: 45px;
+    } */
     .input-search{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1040,10 +1037,7 @@ button:focus{
     .menu{
         width: 55%;
     }
-    #baner::before{
-        width: 0;
-    }
-    .baner-menu, .content-title, .content-info-title, .content-info-text{
+    .baner-menu, .content-title, .content-info-title, .content-info-text, .baner-top{
         display: none;
     }
     .content{
