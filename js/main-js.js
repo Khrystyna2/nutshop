@@ -59,5 +59,9 @@ $(document).ready(function() {
 		$(this).next('ul.menu').toggleClass('open');
 	});
 
+	$('.phone, .phone-close').click(function(){
+		$('#phone').toggleClass('open');
+		
+	});
 	
 });
