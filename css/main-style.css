@@ -249,6 +249,7 @@ button:focus{
     width: 100%;
     /* height: 50vh; */
     position: relative;
+    padding: 80px 0;
 }
 #phone .ours-phone{
     font-size: 18px;
@@ -258,11 +259,11 @@ button:focus{
 }
 #phone .ours-phone .ours-phone__title{
     font-size: 28px;
-    padding-top: 80px;
     padding-bottom: 35px;
 }
 #phone .ours-phone .ours-phone__nomber{
     border-right: 1px solid #fff;
+    width: 60%;
 }
 
 #phone .ours-phone .ours-phone__nomber img{
@@ -970,7 +971,6 @@ button:focus{
     }
     .wrap-icon{
         width: 90%;
-        margin-top: 15px;
     }
     .phone{
         padding-left: 45px;
@@ -1067,5 +1067,11 @@ button:focus{
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         z-index: 10;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .phone{
+        padding-left: 0;
     }
 }
