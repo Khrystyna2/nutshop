@@ -6,6 +6,8 @@ body{
 p{
     margin: 0;
     padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
 }
 ul, li{
    list-style: none;
@@ -24,13 +26,12 @@ a:hover{
 
 .btn-red{
     background: #c22938;
-    padding: 20px 40px;
+    padding: 15px 40px;
     color: #fff;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 40px;
     display: inline-block;
 }
 .btn-red:hover{
@@ -97,6 +98,7 @@ button:focus{
 
 .logo{
     position: relative;
+    margin: auto;
     margin-top: 25px;
     width: 88%;
 }
@@ -394,6 +396,7 @@ button:focus{
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 1.750em;
+    padding-bottom: 40px;
 }
 
 /*the end style header*/
@@ -582,6 +585,7 @@ button:focus{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 22px;
+    padding-bottom: 40px;
 }
 
 /*the end section why-we*/
@@ -820,6 +824,60 @@ button:focus{
     width: 50%;
 }
 
+/*style section catalog*/
+.title-catalog{
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px 0 30px;
+}
+.title-catalog .title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.title-catalog .force-catalog{
+    font-size: 11px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.title-catalog .force-catalog a{
+    color: #a0a0a0;
+    padding-right: 7px;
+}
+.title-catalog .force-catalog span{
+    border-left: 1px solid #a0a0a0;
+    padding-left: 7px; 
+}
+
+.title-catalog .desc-catalog{
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.title-catalog .button-catalog button{
+    border: none;
+    font-size: 12px;
+    color: #fff;
+}
+
+.wrapper-catalog{
+    flex-wrap: nowrap;
+}
+
+.wrapper-catalog .cards-2{
+    width: 165px;
+    height: 180px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.wrapper-catalog .cards-2 .cards-2-desc{
+    color: #009e3b;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+/*the end style section catalog*/
 
 @media only screen and (max-width: 1200px){
     .baner-title h1{
@@ -912,7 +970,10 @@ button:focus{
         max-width: 100%
     }
     .wrap-icon {
-        margin-top: 26px;
+        margin-top: 22px;
+    }
+    .input-search{
+        margin-top: 25px;
     }
 
     .menu-icon{
@@ -1054,9 +1115,6 @@ button:focus{
     .wrap-icon{
         width: 90%;
     }
-    .logo{
-        margin-top: 10px;
-    }
     /* .phone{
         padding-left: 45px;
     } */
@@ -1155,5 +1213,11 @@ button:focus{
 @media only screen and (max-width: 425px) {
     .phone{
         padding-left: 0;
+    }
+    .wrap-icon {
+        margin-top: 15px;
+    }
+    .logo{
+        width: 100%;
     }
 }

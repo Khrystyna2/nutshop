@@ -67,7 +67,8 @@ $('.phone, .phone-close').click(function(){
 		$('.black-fill, .modal-window').toggleClass('show');
 	});
 	$('.black-fill').click(function() {
-		$('.madal-window').toggleClass('show');
+		$('.modal-window').removeClass('show');
+		$('.black-fill').toggleClass('show');
 	});
 
 });
