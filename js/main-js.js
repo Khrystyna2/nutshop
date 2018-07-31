@@ -59,5 +59,15 @@ $(document).ready(function() {
 		$(this).next('ul.menu').toggleClass('open');
 	});
 
+$('.phone, .phone-close').click(function(){
+		$('#phone').toggleClass('open');
+	});	
 	
+	$('.shopping-cart').click(function(){
+		$('.black-fill, .modal-window').toggleClass('show');
+	});
+	$('.black-fill').click(function() {
+		$('.madal-window').toggleClass('show');
+	});
+
 });

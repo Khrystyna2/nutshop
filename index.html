@@ -21,40 +21,53 @@
 
 <body>
     <header id="header" class="header">
-        <div id="phone">
-            <div class="containet">
-                <div class="row">
-                    <div class="col-md-10 ml-auto">
-                        <div class="ours-phone">
-                            <div class="ours-phone__title">
-                                <h3>ПОЗВОНИТЕ НАМ САМИ
-                                        ИЛИ ЗАКАЖИТЕ ЗВОНОК</h3>
-                            </div>
-                            <div class="ours-phone__nomber">
-                                <div class="ours-phone__nomber_life d-flex align-items-center">
-                                    <img src="img/life.png" alt="life">
-                                    +380 (95) 981-78-02
+            <div id="phone">
+                    <div class="container">
+                        <div class="phone-close">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 ml-auto d-flex">
+                                <div class="ours-phone">
+                                    <div class="ours-phone__title">
+                                        <h3>ПОЗВОНИТЕ НАМ САМИ
+                                                ИЛИ ЗАКАЖИТЕ ЗВОНОК</h3>
+                                    </div>
+                                    <div class="ours-phone__nomber">
+                                        <div class="ours-phone__nomber_life d-flex align-items-center">
+                                            <img src="img/life.png" alt="life">
+                                            +380 (95) 981-78-02
+                                        </div>
+                                        <div class="ours-phone__nomber_k d-flex align-items-center">
+                                            <img src="img/k.png" alt="kyivstar">
+                                            +380 (97) 981-78-02
+                                        </div>
+                                        <div class="ours-phone__nomber_mts d-flex align-items-center">
+                                            <img src="img/mts.png" alt="mts">
+                                            +380 (63) 981-78-02
+                                        </div>
+                                    </div>
+                                    <div class="ours-phone__button">
+                                        <a href="#" class="btn-red">ОБРАТНЫЙ ЗВОНОК</a>
+                                    </div>
                                 </div>
-                                <div class="ours-phone__nomber_k d-flex align-items-center">
-                                    <img src="img/k.png" alt="kyivstar">
-                                    +380 (97) 981-78-02
-                                </div>
-                                <div class="ours-phone__nomber_mts d-flex align-items-center">
-                                    <img src="img/mts.png" alt="mts">
-                                    +380 (63) 981-78-02
-                                </div>
-                            </div>
-                            <div class="ours-phone__button">
-                                <a href="#" class="btn-red">ОБРАТНЫЙ ЗВОНОК</a>
+                                <div>
+                                    <div class="ours-consultants">
+                                        <div class="ours-consultants__name d-flex flex-column">
+                                            <span>Ирина Яковленко</span>
+                                            <span>Ваш консультант</span>
+                                        </div>
+                                        <div class="ours-consultants__img">
+                                            <img src="img/girl.png" alt="gitl" class="img-fluid" >
+                                        </div>
+                                    </div>   
+                                </div>   
                             </div>
                         </div>
-                        <div>
-
-                        </div>   
                     </div>
                 </div>
-            </div>
-        </div>
+
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-10 order-3 order-md-0">
@@ -78,10 +91,10 @@
                 </div>
                 <div class="col-md-4 col-6">
                     <a href="index.html" class="logo d-flex align-items-center flex-column">
-                        <img src="icons/logo-орех.svg" alt="Орехофф">
-                        <span class="logo__text">
+                        <img src="img/logo.png" alt="Орехофф">
+                        <!-- <span class="logo__text">
                             премиум качество по лучшей цене
-                        </span>
+                        </span> -->
                     </a>
                 </div>
                 <div class="col-md-3 col-6 ml-auto">
@@ -122,7 +135,7 @@
                             </svg>
                         </div>
                         <div class="carts d-flex align-items-center">
-                            <img src="img/shopping-cart.png" alt="shopping-cart">
+                            <img src="icons/shopping-cart.svg" alt="shopping-cart">
                             <span>11 000 грн</span>
                             <div class="counter">2</div>
                         </div>
@@ -142,14 +155,12 @@
                                 </li>
                                 <li class="menu-item">
                                     <a href="#">СУХОФРУКТЫ</a>
-                                    <div class="wrapper-menu d-flex">
+                                    <div class="wrapper-menu d-flex justify-content-center align-items-center">
                                         <div class="wrapper-menu__categories-img">
-                                            <h3 class="red">сухофрукты</h3>
                                             <img src="img/dryofrit.png" alt="" class="img-fluid">
                                         </div>
                                         <div class="wrapper-menu__categories">
-                                            <h4 class="red">Виды</h4>
-                                            <div class="wrapper-menu__categories_categ d-flex">
+                                            <div class="wrapper-menu__categories_categ d-flex align-items-center justify-content-around">
                                                 <ul>
                                                     <li>
                                                         <a href="#">Абрикосы</a>
@@ -165,12 +176,6 @@
                                                     </li>
                                                     <li>
                                                         <a href="#">Груши</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Бананы</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Дыня</a>
                                                     </li>
                                                 </ul>
                                                 <ul>
@@ -189,18 +194,11 @@
                                                     <li>
                                                         <a href="#">Хурма</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Ананас</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Кокос</a>
-                                                    </li>
                                                 </ul>
-                                            </div>
+                                            <!-- </div>
                                         </div>
                                         <div class="wrapper-menu__popular">
-                                            <h4 class="red">Популярные</h4>
-                                            <div class="wrapper-menu__popular_categ d-flex">
+                                            <div class="wrapper-menu__popular_categ d-flex  align-items-center"> -->
                                                 <ul>
                                                     <li>
                                                         <a href="#">Абрикосы</a>
@@ -217,12 +215,6 @@
                                                     <li>
                                                         <a href="#">Груши</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Бананы</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Дыня</a>
-                                                    </li>
                                                 </ul>
                                                 <ul>
                                                     <li>
@@ -240,12 +232,6 @@
                                                     <li>
                                                         <a href="#">Хурма</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Ананас</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Кокос</a>
-                                                    </li>
                                                 </ul>
                                                 <ul>
                                                     <li>
@@ -262,12 +248,6 @@
                                                     </li>
                                                     <li>
                                                         <a href="#">Хурма</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Ананас</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Кокос</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -352,6 +332,71 @@
     </header>
 
     <section id="catalog" class="catalog">
+
+        <div class="modal-window">
+            <div class="wrapper-fast-browsing d-flex">
+                <div class="img-product">
+                    <img src="img/img-3.jpg" alt="">
+                    <div class="small-img d-flex">
+                        <img src="img/img-3.jpg" alt="">
+                        <img src="img/img-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="details-product">
+                    <ul class="d-flex">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Шоколад</a></li>
+                        <li><a href="#">Шоколадные орехи</a></li>
+                    </ul>
+                    <h3>Шоколадные орехи</h3>
+                    <div class="stars d-flex">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <a href="#">Отзывы <span>(3)</span></a>
+                    </div>
+                    <div class="icon-img d-flex">
+                        <img src="icons/gluten free.svg" alt="">
+                        <img src="icons/raw.svg" alt="">
+                        <img src="icons/kosher.svg" alt="">
+                    </div>
+                    <div class="choice-weight">
+                        <h6>Выберите вес</h6>
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>  
+                    <div class="counter">
+                        <h6>Количество</h6>
+                    </div>
+                    <div class="share-social d-flex">
+                        <h6>Поделиться</h6>
+                    </div>
+                </div>
+            </div>  
+            <div class="tabs">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus unde harum neque voluptatem! Eveniet pariatur repellendus corrupti nesciunt, doloremque soluta asperiores animi et! Praesentium eligendi enim blanditiis! Dolores, recusandae?</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                          </div>
+            </div>
+        </div>
+        <div class="black-fill"></div>
+
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-10 m-auto">
