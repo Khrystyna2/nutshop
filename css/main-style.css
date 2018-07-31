@@ -1066,6 +1066,9 @@ button:focus{
     .send-letter__form button{
         font-size: 14px;
     }
+    .subscribe {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 992px) {
     .wrapper-catalog .cards-2{
