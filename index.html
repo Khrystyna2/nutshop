@@ -336,10 +336,10 @@
         <div class="modal-window">
             <div class="wrapper-fast-browsing d-flex">
                 <div class="img-product">
-                    <img src="img/img-3.jpg" alt="">
+                    <img src="img/big-img.jpg" alt="" class="img-fluid">
                     <div class="small-img d-flex">
-                        <img src="img/img-3.jpg" alt="">
-                        <img src="img/img-1.jpg" alt="">
+                        <img src="img/small-img.jpg" alt="" class="img-fluid">
+                        <img src="img/img.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="details-product">
@@ -349,7 +349,7 @@
                         <li><a href="#">Шоколадные орехи</a></li>
                     </ul>
                     <h3>Шоколадные орехи</h3>
-                    <div class="stars d-flex">
+                    <div class="stars d-flex align-items-center">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -364,34 +364,43 @@
                     </div>
                     <div class="choice-weight">
                         <h6>Выберите вес</h6>
-                        <input type="radio">
-                        <input type="radio">
-                        <input type="radio">
+                        <div class="d-flex flex-column">
+                            <input type="radio">
+                            <input type="radio">
+                            <input type="radio">
+                        </div>
                     </div>  
                     <div class="counter">
                         <h6>Количество</h6>
                     </div>
                     <div class="share-social d-flex">
                         <h6>Поделиться</h6>
+                        <img src="icons/001-facebook.svg" alt="facebook">
+                        <img src="icons/003-twitter.svg" alt="twitter">
+                        <img src="icons/002-instagram.svg" alt="instagram">
                     </div>
                 </div>
             </div>  
             <div class="tabs">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
                             <li class="nav-item">
-                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                              <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-selected="true">ОПИСАНИЕ</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                              <a class="nav-link" id="pills-information-tab" data-toggle="pill" href="#pills-information" role="tab" aria-controls="pills-information" aria-selected="false">ИНФОРМАЦИЯ</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                              <a class="nav-link" id="pills-reviews-tab" data-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-reviews" aria-selected="false">ОТЗЫВЫ</a>
                             </li>
                           </ul>
                           <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus unde harum neque voluptatem! Eveniet pariatur repellendus corrupti nesciunt, doloremque soluta asperiores animi et! Praesentium eligendi enim blanditiis! Dolores, recusandae?</div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                            <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                                <h3>Chocolate river rocks</h3>
+                                <p>As a kid, you probably hear adults say, "don't play with your food." You'll never have to worry about anyone using that phrase
+                                        when you buy these chocolate river rocks. Who says food can't be fun as well as tasty? When you bring home chocolate</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-information" role="tabpanel" aria-labelledby="pills-information-tab">...</div>
+                            <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab">...</div>
                           </div>
             </div>
         </div>
