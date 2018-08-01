@@ -8,13 +8,13 @@ $(document).ready(function() {
 		slidesToScroll: 3,
 		speed: 1000,
 		responsive: [
-			{
-			  breakpoint: 960,
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			  }
-			},
+			// {
+			//   breakpoint: 960,
+			//   settings: {
+			// 	slidesToShow: 3,
+			// 	slidesToScroll: 3,
+			//   }
+			// },
 			{
 			  breakpoint: 640,
 			  settings: {
