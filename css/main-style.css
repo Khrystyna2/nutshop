@@ -466,7 +466,7 @@ button:focus{
 
 .cards img{
     width: 100%;
-    height: 35%;
+    height: 40%;
     /* max-width: 200px; */
 }
 .cards-desc{
@@ -481,7 +481,7 @@ button:focus{
 } 
 .cards .cards-desc .price{
     font-family: inherit;
-    
+
 }
 
 .shopping-cart{
