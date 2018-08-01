@@ -485,8 +485,8 @@ button:focus{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 9%;
-    left: 40%;
+    top: 12%;
+    left: 38%;
     height: 0;
     overflow: hidden;
 }
@@ -499,6 +499,9 @@ button:focus{
 .cards:hover .shopping-cart{
     height: 50px;
     overflow: visible;
+}
+.cards:hover .cards__img{
+    transform: scale(1.2);
 }
 
 .slider-catalog{
@@ -801,7 +804,7 @@ button:focus{
     top: 0;
     left: 0;
     z-index: 99;
-    display: none;
+    /* display: none; */
 }
 .modal-window{
     position: fixed;
@@ -810,7 +813,7 @@ button:focus{
     height: 70%;
     top: calc(15%);
     left: calc(15%);
-    display: none;
+    /* display: none; */
     background: #fff;
     border: 3px solid #000;
     padding: 0 60px;
@@ -925,11 +928,13 @@ button:focus{
 }
 .title-catalog .force-catalog a{
     color: #a0a0a0;
-    padding-right: 7px;
+    padding-right: 7px; 
+    padding-left: 3px;
+    border-right: 1px solid #a0a0a0;
 }
 .title-catalog .force-catalog span{
-    border-left: 1px solid #a0a0a0;
-    padding-left: 7px; 
+    /* border-left: 1px solid #a0a0a0; */
+    padding-left: 4px; 
 }
 
 .title-catalog .desc-catalog{
@@ -937,17 +942,21 @@ button:focus{
     font-size: 14px;
     padding-bottom: 15px;
 }
+.title-catalog .desc-catalog span{
+    font-weight: 700;
+}
 .title-catalog .button-catalog button{
     border: none;
     font-size: 12px;
     color: #fff;
 }
-
-.wrapper-catalog{
+.catalog, .catalog-2{
+    padding: 60px 0 30px;
+}
+.wrapper-catalog, .wrapper-catalog-2{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    padding: 60px 0 30px;
 }
 
 .wrapper-catalog .cards-2{
@@ -988,7 +997,13 @@ button:focus{
     font-style: italic;
 }
 /*the end style section catalog*/
+.wrapper-catalog-2 .cards{
+    width: 200px;
+    height: 235px;
+}
+/*section catalog-2*/
 
+/*the end section catalog-2*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
