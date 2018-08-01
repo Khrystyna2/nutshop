@@ -273,6 +273,7 @@ button:focus{
 #phone .ours-phone .ours-phone__nomber{
     border-right: 1px solid #fff;
     width: 60%;
+    margin-bottom: 35px;
 }
 #phone .ours-phone .ours-phone__button{
     padding-bottom: 80px;
@@ -1143,7 +1144,9 @@ button:focus{
     .wrapper-catalog-2 .cards{
         margin-right: 2%;
     }
-
+    #phone .ours-phone .ours-phone__nomber{
+        width: 70%;
+    }
 }
 
 
@@ -1203,6 +1206,13 @@ button:focus{
     }
     .subscribe {
         width: 50%;
+    }
+    #phone .ours-consultants .ours-consultants__name{
+        width: 85%;
+    }
+    #phone .ours-consultants .ours-consultants__img img {
+        height: 325px;
+        right: -40px;
     }
 }
 @media only screen and (max-width: 992px) {
@@ -1361,7 +1371,23 @@ button:focus{
     .wrapper-catalog .cards-2:nth-of-type(3n){
         margin-right: 13%;
     }
-
+    #phone .ours-consultants{
+        display: none !important;
+    }
+    #phone .ours-phone {
+        width: 100%;
+        text-align: center;
+    }
+    #phone .ours-phone .ours-phone__nomber {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #phone .ours-phone .ours-phone__title{
+        font-size: 24px;
+        padding-bottom: 30px;
+        padding-top: 55px;
+    }
 }
 
 @media only screen and (max-width: 717px) {
@@ -1547,6 +1573,13 @@ button:focus{
     }
     .catalog-2 .cards{
         width: 50%;
+    }
+    #phone .ours-phone .ours-phone__nomber{
+        border-right: none;
+        width: 100%;
+    }
+    .ours-phone__nomber_life, .ours-phone__nomber_k, .ours-phone__nomber_mts{
+        justify-content: center;
     }
 }
 @media only screen and (max-width: 545px) {
