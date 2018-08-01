@@ -75,4 +75,8 @@ $('.phone, .phone-close').click(function(){
 	$('.see-more').click(function() {
 		$('.wrap-filter__more').toggleClass('show');
 	});
+
+	$('.filter').click(function() {
+		$('.wrap-filter').toggleClass('show');
+	});
 });
