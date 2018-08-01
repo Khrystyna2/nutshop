@@ -476,6 +476,13 @@ button:focus{
 .cards, .cards-desc, .price{
     padding-top: 10px;
 }
+.cards-desc p{
+    font-weight: 700;
+} 
+.cards .cards-desc .price{
+    font-family: inherit;
+    
+}
 
 .shopping-cart{
     height: 50px;
