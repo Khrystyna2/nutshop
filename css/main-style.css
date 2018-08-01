@@ -38,6 +38,17 @@ a:hover{
     transform: scale(1.05);
     color: inherit;
 }
+.btn-red-border{
+    padding: 12px 38px;
+    color: inherit;
+    font-size: 14px;
+    border: 2px solid #c22938;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+}
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -611,7 +622,7 @@ button:focus{
     padding: 55px 0;
 }
 
-.comments-wrap__title, .send-letter__title{
+.comments-wrap__title, .send-letter__title, .recommend{
     text-align: center;
     font-size: 28px;
     font-weight: 500;
@@ -847,6 +858,7 @@ button:focus{
 
 .details-product{
     margin-top: 30px;
+    padding: 0 25px;
 }
 .details-product ul li{
     padding-right: 10px;
@@ -900,6 +912,41 @@ button:focus{
     background-color: #f8f8f8;
     height: 45px;
     width: 315px;
+}
+.wrap-counter__button span{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 22px;
+    padding-right: 32px;
+}
+.wrap-counter__button button.btn-red{
+    height: inherit;
+    border: none;
+    padding: 0 35px;
+    cursor: pointer;
+}
+.wrap-counter__button button.btn-red:hover{
+    transform: scale(1);
+    color: #fff;
+}
+.wrap-counter__button button.heart{
+    height: inherit;
+    width: 43px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.wrap-counter__button button.heart svg{
+    fill: #a0a0a0;
+    height: 22px;
+    width: 22px;
+}
+.wrap-counter__button button.heart:hover svg{
+    fill: #c22938;
 }
 
 .tabs{
@@ -1010,6 +1057,8 @@ button:focus{
     font-style: italic;
 }
 /*the end style section catalog*/
+
+/*section catalog-2*/
 .wrapper-catalog-2 .cards{
     width: 220px;
     height: 235px;
@@ -1106,9 +1155,32 @@ button:focus{
     color: #a0a0a0;
     border: 1px solid #cdcdcd;
 }
-/*section catalog-2*/
 
 /*the end section catalog-2*/
+.recommend{
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+.recommend .slider-catalog{
+    margin-top: 55px;
+}
+.reviews{
+    flex-wrap: wrap;
+}
+.reviews .comements-cards{
+    width: 48%;
+    margin-left: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.reviews .comements-cards:nth-of-type(2n){
+    margin-right: 0;
+}
+/*section card-product*/
+.card-product {
+    padding: 45px 0;
+}
+/* the end card-product*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
