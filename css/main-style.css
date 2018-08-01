@@ -77,8 +77,11 @@ button:focus{
     height: 40px;
     background-color: #f7f7f7;
     border: 1px solid #ede9e2;
-    color: #cececf;
+    color: inherit;
     padding-left: 20px;
+}
+.input-search input[type="search"]::placeholder{
+    color: #cececf
 }
 
 .input-search svg{
@@ -907,6 +910,45 @@ button:focus{
 .counter{
     margin-bottom: 35px;
 }
+
+.wrap-counter__spinner{
+    height: 45px;
+    width: 70px;
+    background: #f8f8f8;
+    margin-right: 10px;
+}
+.wrap-counter__spinner .spinner{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+.wrap-counter__spinner .spinner input[type="text"]{
+       width: 50%;
+      text-align: center;
+       height: inherit;
+      border: none;
+      background: transparent;
+ }
+ .wrap-counter__spinner .spinner .nav{
+    display: flex;
+    flex-flow: column;
+    background: #9b9b9b;
+    width: 20px;
+    color: #fff;
+    padding: 0 5px;
+ }
+ .wrap-counter__spinner .spinner .nav .up,
+ .wrap-counter__spinner .spinner .nav .down{
+     height: 50%;
+     cursor: pointer;
+ }
+ .wrap-counter__spinner .spinner .nav .up:hover,
+ .wrap-counter__spinner .spinner .nav .down:hover{
+    color: #121212;
+}
+
+
 
 .wrap-counter__button{
     background-color: #f8f8f8;

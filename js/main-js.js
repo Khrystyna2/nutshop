@@ -79,4 +79,31 @@ $('.phone, .phone-close').click(function(){
 	$('.filter').click(function() {
 		$('.wrap-filter').toggleClass('show');
 	});
+
+
+
+	$('.spinner').each(function() {  
+    
+		var spinner = $(this),
+				input = spinner.find('input[type="text"]'),
+				btnUp = spinner.find('.up'),
+				btnDown = spinner.find('.down'),
+				// options
+				step = input.data('step'),
+				min = input.data('min'),
+				max = input.data('max');
+				
+		input.val(min);
+		
+		btnUp.click(function(){
+			input.val() >= max ? $(this).prop("disabled",true) : input.val((input.val()*1) + step);
+			
+	 });
+		
+		btnDown.click(function(){
+			input.val() <= min ? $(this).prop("disabled",true) : input.val((input.val()*1) - step);
+		 });
+			
+		});
+	
 });
