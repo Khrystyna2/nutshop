@@ -26,7 +26,7 @@ a:hover{
 
 .btn-red{
     background: #c22938;
-    padding: 15px 40px;
+    padding: 14px 38px;
     color: #fff;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
@@ -154,6 +154,7 @@ button:focus{
 .carts{
     position: relative;
     height: inherit;
+    color: inherit;
 }
 .carts span{
     padding-left: 15px;
@@ -1279,6 +1280,119 @@ button:focus{
 }
 
 /*the end section payment-delivery*/
+
+
+/*section basket*/
+.basket{
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+.wrapper-basket,
+.wrapper-basket__info{
+    padding: 25px 0;
+    border-bottom: 1px solid #e2dcd1;
+}
+
+.wrapper-basket h6{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.wrapper-basket__product{
+    width: 46%;
+}
+.wrapper-basket__number,
+.wrapper-basket__total-price,
+.wrapper-basket__price{
+    width: 18%;
+}
+
+.wrapper-basket__product .wrapper-basket__product_img{
+    width: 40%;
+    padding: 0 15px;
+}
+.wrapper-basket__product .wrapper-basket__product_img img{
+    max-width: 100%;
+    max-height: 100%
+}
+.wrapper-basket__product .wrapper-basket__product_desc span{
+    font-weight: 500;
+    font-size: 15px;
+}
+.wrapper-basket__product .wrapper-basket__product_desc p{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.wrapper-basket__product .wrapper-basket__product_desc a{
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #a0a0a0;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.wrapper-basket__price span,
+.wrapper-basket__total-price span{
+    font-weight: 500;
+    font-size: 16px;
+}
+.wrapper-basket__total-price{
+    position: relative;
+}
+
+.wrapper-basket__total-price i{
+    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+}
+
+.wrapper-basket__info_title,
+.wrapper-basket__info_conditions{
+    text-align: right;
+    width: 20%;
+}
+.wrapper-basket__info_title span,
+.wrapper-basket__info_conditions span,
+.wrapper-basket__info_conditions a{
+    margin: 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px; 
+}
+.wrapper-basket__info_title span{
+    color: #a0a0a0;
+    font-weight: 700;
+}
+.wrapper-basket__info_conditions a{
+    color: inherit;
+    text-decoration: underline;
+}
+.wrapper-basket__info_conditions span:last-of-type{
+    color: #009e3b;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gotham Pro', sans-serif;
+}
+.wrapper-basket__button{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.wrapper-basket__button a{
+    margin-left: 25px;
+}
+
+
+
+/*the end section basket*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
@@ -1406,7 +1520,8 @@ button:focus{
         margin-right: 0;
     }
     .card-product .container,
-    .recommend .container{
+    .recommend .container,
+    .basket .container{
         max-width: 100%;
     }
     .reviews .comements-cards {
@@ -1850,6 +1965,37 @@ button:focus{
         margin-left: 0;
         border: none;
     }
+    .wrapper-basket.hide-wrapper-basket{
+        display: none !important;
+    }
+    .wrapper-basket{
+        flex-flow: column;
+    }
+    .wrapper-basket__product{
+        width: 100%;
+    }
+    .wrapper-basket__number, .wrapper-basket__total-price, .wrapper-basket__price {
+        width: 25%;
+        margin: 15px 0;
+    }
+    .wrapper-basket__product .wrapper-basket__product_img {
+        width: 55%;
+    }
+    .wrapper-basket__info_title, .wrapper-basket__info_conditions {
+        width: 50%;
+        text-align: center;
+    }
+    .wrapper-basket__button {
+        flex-flow: column;
+        width: 70%;
+        margin: 20px auto ;
+    }
+    .wrapper-basket__button a {
+        margin-top: 25px;
+        margin-left: 0;
+        text-align: center;
+    }
+
 }
 @media only screen and (max-width: 545px) {
     .wrapper-catalog .cards-2{
