@@ -105,5 +105,9 @@ $('.phone, .phone-close').click(function(){
 		 });
 			
 		});
+
+
+
+		$('.gruop-radio input').styler();
 	
 });
