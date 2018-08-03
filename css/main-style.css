@@ -1404,9 +1404,49 @@ button:focus{
     color: #121212;
 }
 
-
-
 /*the end section basket*/
+
+
+/*section contacts*/
+.contacts{
+    padding: 40px 0;
+}
+.contacts-info li{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.contacts-info li img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.contacts-forms__title{
+    font-size: 22px;
+    padding-left: 25px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.contacts-forms{
+    border:  1px solid #efefef;
+    border-radius: 5px;
+    padding: 25px;
+    width: 85%;
+    font-size: 14px;
+}
+.contacts-forms .form-control{
+    border-radius: 0;
+    border: 2px solid #ede9e2;
+}
+
+.contacts-forms button{
+    border: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+
+/*the end section contacts*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
@@ -1444,6 +1484,9 @@ button:focus{
     }
     #phone .ours-phone .ours-phone__nomber{
         width: 70%;
+    }
+    .contacts-forms{
+        width: 100%;
     }
 }
 
@@ -1535,7 +1578,8 @@ button:focus{
     }
     .card-product .container,
     .recommend .container,
-    .basket .container{
+    .basket .container,
+    .contacts .container{
         max-width: 100%;
     }
     .reviews .comements-cards {
@@ -1743,6 +1787,9 @@ button:focus{
         font-size: 90px;
         right: 5px;
         top: 3px;
+    }
+    .contacts-info{
+        margin-top: 20px;
     }
 } 
 
@@ -2031,7 +2078,7 @@ button:focus{
     }
     .img-product {
         width: 100%;
-        margin: auto;
+        padding: 0;
     }
 }
 @media only screen and (max-width: 516px) {
