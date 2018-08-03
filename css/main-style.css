@@ -2019,6 +2019,10 @@ button:focus{
     .wrapper-catalog .cards-2:nth-of-type(3n){
         margin-right: 8%;
     }
+    .img-product {
+        width: 100%;
+        margin: auto;
+    }
 }
 @media only screen and (max-width: 516px) {
     .wrapper-catalog .cards-2{
@@ -2075,7 +2079,7 @@ button:focus{
     .wrap-counter{
         flex-flow: column;
     }
-    .wrap-counter .wrap-counter__spinner{
+    .wrapper-basket__number .wrap-counter .wrap-counter__spinner{
         width: 50%;
         margin: auto;
         margin-bottom: 10px;
