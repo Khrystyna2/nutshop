@@ -1410,7 +1410,7 @@ button:focus{
 
 
 /*section contacts*/
-.contacts, .authorization{
+.contacts, .authorization, .registration{
     padding: 40px 0;
 }
 .contacts-info li{
@@ -1460,7 +1460,7 @@ button:focus{
     width: 1px;
     background: #e2dcd1;
     position: absolute;
-    left: -29%;
+    left: -24%;
 }
 .remind-password{
     color: #009e3b;
@@ -1517,6 +1517,23 @@ a.gruop-social-buttons__google-plus:hover{
 }
 
 /*the end section authorization*/
+
+/*section rigistration*/
+.form-group p{
+    color: #a0a0a0;
+    padding-top: 7px;
+}
+
+.registration .contacts-forms p{
+    padding-top: 10px;
+}
+.registration .contacts-forms p a{
+    color: #009e3b;
+}
+.registration .contacts-forms p a:hover{
+    color: #009e3b;
+    text-decoration: underline;
+}
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
@@ -1557,6 +1574,9 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .contacts-forms{
         width: 100%;
+    }
+    .gruop-social-buttons::before{
+        left: -14%;
     }
 }
 
@@ -1655,6 +1675,10 @@ a.gruop-social-buttons__google-plus:hover{
     .reviews .comements-cards {
         margin-right: 25px;
         margin-bottom: 25px;
+    }
+    .gruop-social-buttons::before {
+        content: '';
+        height: 0;
     }
 }
 
@@ -1858,11 +1882,18 @@ a.gruop-social-buttons__google-plus:hover{
         right: 5px;
         top: 3px;
     }
-    .contacts-info{
+    .contacts-forms__title{
         margin-top: 20px;
     }
+    
 } 
 
+@media only screen and (max-width: 768px) and (min-width: 600px){
+    .contacts .container{
+       padding: 0 55px;
+    } 
+
+}
 @media only screen and (max-width: 717px) {
     .wrapper-catalog .cards-2{
         margin: 25px 12%;
@@ -2136,6 +2167,9 @@ a.gruop-social-buttons__google-plus:hover{
         position: absolute;
         top: 28%;
         left: 27%;
+    }
+    .gruop-social-buttons__title{
+        margin-top: 15px;
     }
 }
 @media only screen and (max-width: 545px) {
