@@ -1419,7 +1419,7 @@ button:focus{
 
 
 /*section contacts*/
-.contacts, .authorization, .registration{
+.contacts, .authorization, .registration, .error-404{
     padding: 40px 0;
 }
 .contacts-info li{
@@ -1547,6 +1547,26 @@ a.gruop-social-buttons__google-plus:hover{
     color: #009e3b;
     text-decoration: underline;
 }
+
+/*section error*/
+.wrapper-error-404{
+    text-align: center;
+    font-size: 18px;
+}
+.wrapper-error-404__img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.wrapper-error-404__desc h2{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.wrapper-error-404 a.btn-red{
+    font-size: 14px;
+    color: #fff;
+    margin: 35px 0 20px;
+}
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
@@ -1590,6 +1610,19 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .gruop-social-buttons::before{
         left: -14%;
+    }
+    .modal-window .wrapper-fast-browsing .details-product{
+        width: 50%;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter,
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter span {
+        font-size: 13px;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter button.btn-red{
+        padding: 0 10px;
+        width: auto;
     }
 }
 
@@ -1897,6 +1930,12 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .contacts-forms__title{
         margin-top: 20px;
+    }
+    .modal-window .wrapper-fast-browsing .img-product{
+        width: 90%;
+    }
+    .modal-window .wrapper-fast-browsing .details-product{
+        width: 100%;
     }
     
 } 
@@ -2260,5 +2299,14 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .cards{
         padding: 0;
+    }
+    .wrapper-error-404{
+        font-size: 16px;
+    }
+    .wrapper-error-404__desc h2{
+        font-size: 18px;
+    }
+    .modal-window{
+        padding: 0 5px;
     }
 }
