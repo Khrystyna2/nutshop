@@ -1258,26 +1258,29 @@ button:focus{
 /* the end card-product*/
 
 /*section payment-delivery*/
-.payment-delivery{
+.payment-delivery, .about-us{
     padding-bottom: 40px;
 }
-.payment-delivery div{
+.about-us{
+    padding-top: 40px;
+}
+.payment-delivery div, .about-us div{
     line-height: 1.6em;
     font-size: 18px;
 }
-.payment-delivery div h4{
+.payment-delivery div h4, .about-us div h4{
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 15px;
     margin-top: 35px;
 }
 
-.payment-delivery div ul li{
+.payment-delivery div ul li, .about-us div ul li{
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     padding: 5px 0;
 }
-.payment-delivery div ul li::before{
+.payment-delivery div ul li::before, .about-us div ul li::before{
     content: '-';
     color: #009e3b;
     font-weight: 700;
@@ -1286,7 +1289,13 @@ button:focus{
 
 .payment-delivery .maps{
     max-width: 100%;
-
+}
+.about-us .maps{
+    max-width: 100%;
+    margin-top: 25px;
+}
+.about-us div p{
+    padding-bottom: 10px;
 }
 
 /*the end section payment-delivery*/
