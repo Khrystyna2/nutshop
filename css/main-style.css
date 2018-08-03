@@ -35,6 +35,9 @@ a:hover{
     display: inline-block;
 }
 .btn-red:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transform: scale(1.05);
     color: inherit;
 }
@@ -48,6 +51,12 @@ a:hover{
     font-weight: 700;
     cursor: pointer;
     display: inline-block;
+}
+.btn-red-border:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -1353,7 +1362,7 @@ button:focus{
     justify-content: center;
     align-items: center;
     margin-left: 15px;
-
+    cursor: pointer;
 }
 
 .wrapper-basket__info_title,
@@ -1385,9 +1394,14 @@ button:focus{
 .wrapper-basket__button{
     margin-top: 40px;
     margin-bottom: 20px;
+    color: #fff;
 }
 .wrapper-basket__button a{
     margin-left: 25px;
+}
+.wrapper-basket__button a.btn-red-border{
+    font-size: 15px;
+    color: #121212;
 }
 
 
