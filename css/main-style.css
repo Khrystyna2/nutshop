@@ -495,7 +495,8 @@ button:focus{
 }
 
 .cards img{
-    max-height: 100%;
+    /* max-height: 100%; */
+    height: auto;
     max-width: 100%;
 }
 .cards-desc{
@@ -1319,6 +1320,7 @@ button:focus{
 
 .wrapper-basket__product .wrapper-basket__product_img{
     width: 40%;
+    height: auto;
     padding: 0 15px;
 }
 .wrapper-basket__product .wrapper-basket__product_img img{
@@ -1408,7 +1410,7 @@ button:focus{
 
 
 /*section contacts*/
-.contacts{
+.contacts, .authorization{
     padding: 40px 0;
 }
 .contacts-info li{
@@ -1421,7 +1423,7 @@ button:focus{
     padding-right: 10px;
 }
 
-.contacts-forms__title{
+.contacts-forms__title, .gruop-social-buttons__title{
     font-size: 22px;
     padding-left: 25px;
     font-weight: 400;
@@ -1445,8 +1447,76 @@ button:focus{
     margin-top: 15px;
 }
 
-
 /*the end section contacts*/
+
+/*section authorization*/
+.gruop-social-buttons{
+    height: 100%;
+    position: relative;
+}
+.gruop-social-buttons::before{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: #e2dcd1;
+    position: absolute;
+    left: -29%;
+}
+.remind-password{
+    color: #009e3b;
+   font-weight: 500;
+   margin-bottom: 15px;
+   text-decoration: underline;
+   display: inline-block;
+}
+.gruop-social-buttons__title{
+    padding-left: 0;
+}
+.gruop-social-buttons__desc{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.gruop-social-buttons__facebook img, .gruop-social-buttons__twitter img, .gruop-social-buttons__google-plus img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.gruop-social-buttons__facebook span, 
+.gruop-social-buttons__twitter span, 
+.gruop-social-buttons__google-plus span{
+    padding-left: 15px;
+    border-left: 1px solid;
+}
+a.gruop-social-buttons__facebook, 
+a.gruop-social-buttons__twitter, 
+a.gruop-social-buttons__google-plus{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+a.gruop-social-buttons__facebook:hover, 
+a.gruop-social-buttons__twitter:hover, 
+a.gruop-social-buttons__google-plus:hover{
+    transform: scale(1.05);
+}
+.gruop-social-buttons__facebook{
+    background: #3b5998;
+}
+.gruop-social-buttons__twitter{
+    background: #55acee;
+}
+.gruop-social-buttons__google-plus{
+    background: #dd4b39;
+}
+
+/*the end section authorization*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
