@@ -730,6 +730,7 @@ button:focus{
     font-weight: 700;
     margin-left: 8px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .footer{
