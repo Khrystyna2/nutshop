@@ -1421,7 +1421,7 @@ button:focus{
 
 
 /*section contacts*/
-.contacts, .authorization, .registration, .error-404, .personal-office{
+.contacts, .authorization, .registration, .error-404, .personal-office, .wholesale{
     padding: 40px 0;
 }
 .contacts-info li{
@@ -1440,7 +1440,7 @@ button:focus{
     font-weight: 400;
     padding-bottom: 15px;
 }
-.contacts-forms, .my-information__form, .change-passord_form, .my-address__desc{
+.contacts-forms, .my-information__form, .change-passord_form, .my-address__desc, .contact-wholesale{
     border:  1px solid #efefef;
     border-radius: 5px;
     padding: 25px;
@@ -1449,7 +1449,8 @@ button:focus{
 }
 .contacts-forms .form-control,
 .my-information__form .form-control,
-.change-passord_form .form-control{
+.change-passord_form .form-control,
+.contact-wholesale .form-control{
     border-radius: 0;
     border: 2px solid #ede9e2;
 }
@@ -1662,7 +1663,26 @@ a.gruop-social-buttons__google-plus:hover{
     background: transparent;
 }
 
-/*the end personal-affice*/
+/*the end section personal-affice*/
+
+/*section wholesale*/
+.contact-wholesale{
+    margin: 40px 0;
+    width: 100%;
+}
+.contact-wholesale label::after{
+    content: '*';
+    color: #ff4444;
+    font-size: 16px;
+    padding-left: 3px;
+}
+.contact-wholesale .form-group:last-of-type{
+    margin-bottom: 25px;
+}
+.contact-wholesale button.btn-red{
+    border: none;
+    margin: 28px 0 15px;
+}
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
