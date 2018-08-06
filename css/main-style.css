@@ -33,6 +33,7 @@ a:hover{
     font-weight: 700;
     cursor: pointer;
     display: inline-block;
+    border: none;
 }
 .btn-red:hover{
     -moz-transform: scale(1.05);
@@ -1670,7 +1671,8 @@ a.gruop-social-buttons__google-plus:hover{
     margin: 40px 0;
     width: 100%;
 }
-.contact-wholesale label::after{
+.contact-wholesale label::after,
+.clearance-order__delivery_form label.necessary::after{
     content: '*';
     color: #ff4444;
     font-size: 16px;
@@ -1683,6 +1685,166 @@ a.gruop-social-buttons__google-plus:hover{
     border: none;
     margin: 28px 0 15px;
 }
+
+/*section clearance-order*/ 
+.clearance-order{
+    padding-bottom: 45px;
+}
+.clearance-order .top-background{
+    background: #f8f8f8;
+    padding: 25px 0;
+}
+.clearance-order .top-background img{
+    max-width: 300px;
+    height: auto;
+}
+.clearance-order{
+    color: #131313;
+    font-size: 14px;
+}
+.clearance-order__guest, .clearance-order__delivery{
+    padding: 35px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.clearance-order__payment{
+    padding-top: 35px;
+}
+.clearance-order__title div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #4f4f4f;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 30px;
+}
+.clearance-order__title h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+.clearance-order__guest_form, .clearance-order__delivery_form, .clearance-order__form{
+    padding-left: 66px;
+}
+.clearance-order__gruop-input{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.clearance-order__gruop-input input.form-control{
+    width: 300px;
+}
+.clearance-order__gruop-input input.form-control, .clearance-order__delivery_form input.form-control{
+    border: 1px solid #a0a0a0;
+}
+.btn-dark-grey{
+    background: #454545;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 30px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+.clearance-order__checkbox{
+    margin-bottom: 25px;
+}
+.clearance-order__checkbox p{
+    padding-left: 10px;
+}
+
+.clearance-order__guest_form span{
+    color: #a0a0a0;
+}
+.clearance-order__guest_form span a{
+    color: #009e3b;
+    margin-left: 20px;
+}
+.clearance-order__delivery_form .btn-dark-grey{
+    margin-top: 15px;
+}
+.clearance-order__delivery_form{
+    margin-top: 25px;
+}
+.clearance-order__form .gruop-radio{
+    margin-top: 25px;
+    border: 1px solid #efefef;
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.clearance-order__form .gruop-radio p{
+    padding-left: 10px;
+}
+/* .clearance-order__form .gruop-radio .jq-radio{
+    width: 20px;
+    height: 20px;
+}
+.clearance-order__form .gruop-radio .jq-radio.checked .jq-radio__div{
+    width: 12px;
+    height: 12px;
+} */
+.clearance-order__form .gruop-radio li{
+    margin-bottom: 15px;
+}
+.clearance-order__form .gruop-radio li:last-of-type{
+    margin-bottom: 0;
+}
+.clearance-order__form button.btn-red{
+    width: 100%;
+}
+
+.cards-order{
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 35px;
+    box-shadow: 1px 1px 8px 0 rgba(210, 208, 208, 0.5);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+.cards-order .wrapper__cards-order{
+    border-bottom: 1px solid #efefef;
+    padding: 15px;
+}
+.cards-order .wrapper__cards-order:last-of-type{
+    border-bottom: 0;
+}
+.wrapper__cards-order_edit{
+    color: #009e3b;
+    font-family: 'Gotham Pro', sans-serif;
+}
+.wrapper__cards-order_edit:hover{
+    color: #009e3b;
+    text-decoration: underline;
+}
+.cards-order__product p{
+    padding-left: 5px;
+}
+.cards-order__product .cards-order__product_desc{
+    padding-top: 10px;
+}
+.cards-order__product div span{
+    width: 28%;
+}
+.cards-order__width-block{
+    width: 45%;
+}
+.cards-order__totla-price{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+.cards-order__link{
+    color: inherit;
+    text-decoration: underline;
+}
+/*the end section clearance-order*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;

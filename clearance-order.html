@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Орехофф</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,700|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <!-- fonts GothamPro -->
+    <link rel="stylesheet" href="fonts/GothamPro/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body>
+    <section class="clearance-order">
+        <div class="top-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="icons/logo-орех.svg" alt="орехофф">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-6 order-2 order-md-0">
+                   <div class="clearance-order__guest">
+                        <div class="clearance-order__title d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center">1</div>
+                            <h4>Гость</h4>
+                        </div>
+                        <div class="clearance-order__guest_form">
+                            <p>Хотите остаться в качестве гостя ? Вы сможете сохранить свои данные,
+                                    чтобы позже создать учетную запись у нас</p>
+                            <div class="clearance-order__gruop-input d-flex justify-content-between align-items-end">
+                                <div>    
+                                    <label for="email">E-mail</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            <button type="submit" class="btn-dark-grey">ОСТАТЬСЯ ГОСТЕМ</button>
+                            </div>
+                            <div class="clearance-order__checkbox d-flex align-items-center">
+                                <input type="checkbox">
+                                <p>Подписаться на рассылку</p>
+                            </div>
+                            <span>Есть аккаунт? <a href="#">Войти</a></span>
+                        </div>
+                   </div>
+                   <div class="clearance-order__delivery">
+                        <div class="clearance-order__title d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">2</div>
+                                <h4>Доставка</h4>
+                        </div>
+                        <form class="clearance-order__delivery_form">
+                                <div class="form-group">    
+                                    <label for="email" class="necessary">E-mail</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="necessary">Введите ФИО</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address" class="necessary">Адрес доставки (Город, Улица Дом, Почтовый Индекс)</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneNumber">Номер телефона</label>
+                                    <input type="text" class="form-control" id="phoneNumber">
+                                </div>
+                                <div class="clearance-order__checkbox d-flex align-items-center">
+                                    <input type="checkbox">
+                                    <p>Мой почтовый адрес совпадает с моим адресом доставки </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comemnt">Коментарий к заказу</label>
+                                    <input type="text" class="form-control" id="comemnt">
+                                </div>
+                                <button type="button" class="btn-dark-grey">ПРОДОЛЖИТЬ</button>
+                    </form>
+                   </div>
+                   <div class="clearance-order__payment">
+                        <div class="clearance-order__title d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">3</div>
+                                <h4>Оплата</h4>
+                        </div>
+                        <div class="clearance-order__form">
+                                <ul class="d-flex flex-column gruop-radio">
+                                        <li class="d-flex align-items-center">
+                                            <label for="radio1" class="input-radio"></label>
+                                             <input id="radio1" type="radio" name="radio" checked>
+                                             <p>Наличными, при получении товара</p>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                                <label for="radio2" class="input-radio"></label>
+                                                 <input id="radio2" type="radio" name="radio">
+                                                 <p>Visa / MasterCard</p>
+                                            </li>
+                                            <li class="d-flex align-items-center">
+                                                    <label for="radio3" class="input-radio"></label>
+                                                     <input id="radio3" type="radio" name="radio">
+                                                     <p>Безналичный расчет</p>
+                                                </li>
+                                    </ul>
+                                    <button type="submit" class="btn-red">ЗАКАЗ ПОДТВЕРЖДАЮ</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 ml-auto">
+                    <div class="cards-order">
+                        <div class="wrapper__cards-order  d-flex justify-content-between align-items-center">
+                            <p>Итоги заказа</p>
+                            <a href="#" class="wrapper__cards-order_edit">Редактировать</a>
+                        </div>
+                        <div class="wrapper__cards-order d-flex justify-content-between align-items-center">
+                            <div class="cards-order__product">
+                                <span>1 шт.</span>
+                                <div class="cards-order__product_desc d-flex justify-content-between">
+                                    <div style="width: 70px;height: auto;">
+                                       <img src="img/img-4.jpg" alt="" style="max-width: 100%; max-height: 100%"> 
+                                    </div>
+                                    <p>1 х Бразильских орехов
+                                            (упакованные)</p>
+                                    <span>200 грн</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper__cards-order d-flex">
+                            <div class="cards-order__width-block d-flex flex-column">
+                                <span>Цена товаров:</span>
+                                <span>Код купона:</span>
+                                <span>Время доставки:</span>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span>200 грн</span>
+                                <a href="#" class="cards-order__link">Добавить</a>
+                                <a href="#" class="cards-order__link">Узнать</a>
+                            </div>
+                        </div>
+                        <div class="wrapper__cards-order d-flex align-items-center">
+                            <p class="cards-order__width-block">Итого</p>
+                            <span class="cards-order__totla-price">200 грн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main-js.js" defer></script>
+
+
+</body>
+
+</html>
