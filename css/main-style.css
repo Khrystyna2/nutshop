@@ -458,6 +458,7 @@ button:focus{
     color: inherit;
     font-weight: 500;
     font-size: 20px;
+    text-transform: uppercase;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background: transparent;
@@ -1420,7 +1421,7 @@ button:focus{
 
 
 /*section contacts*/
-.contacts, .authorization, .registration, .error-404{
+.contacts, .authorization, .registration, .error-404, .personal-office{
     padding: 40px 0;
 }
 .contacts-info li{
@@ -1439,19 +1440,21 @@ button:focus{
     font-weight: 400;
     padding-bottom: 15px;
 }
-.contacts-forms{
+.contacts-forms, .my-information__form, .change-passord_form, .my-address__desc{
     border:  1px solid #efefef;
     border-radius: 5px;
     padding: 25px;
     width: 85%;
     font-size: 14px;
 }
-.contacts-forms .form-control{
+.contacts-forms .form-control,
+.my-information__form .form-control,
+.change-passord_form .form-control{
     border-radius: 0;
     border: 2px solid #ede9e2;
 }
 
-.contacts-forms button{
+.contacts-forms button, .my-information__form button, .change-passord_form button, .my-address button.btn-red{
     border: none;
     color: #fff;
     margin-top: 15px;
@@ -1525,9 +1528,12 @@ a.gruop-social-buttons__google-plus:hover{
 .gruop-social-buttons__google-plus{
     background: #dd4b39;
 }
-.rigistration-title{
+/* .rigistration-title{
     padding-left: 0;
     padding-top: 30px;
+} */
+.gruop-social-buttons .registration-button{
+    margin-top: 40px;
 }
 
 /*the end section authorization*/
@@ -1568,6 +1574,81 @@ a.gruop-social-buttons__google-plus:hover{
     color: #fff;
     margin: 35px 0 20px;
 }
+
+
+/*section personal-office*/
+.table-history-order{
+    font-size: 12px;
+    margin-top: 35px;
+}
+.date-order h6, 
+.number-order h6,
+.product-order h6,
+.status-order h6,
+.total-order h6{
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid #e2dcd1;
+    padding-bottom: 15px;
+}
+.table-history-order .date-order{
+    width: 16%;
+}
+.table-history-order .number-order{
+    width: 16%;
+}
+.table-history-order .product-order{
+    width: 16%;
+}
+.table-history-order .status-order{
+    width: 26%;
+}
+.table-history-order .total-order{
+    width: 26%;
+}
+
+.my-information, .change-passord{
+    width: 48%;
+    margin: 35px auto;
+    color: #131313;
+}
+.my-information__title, .change-passord__title, .my-address__title{
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+.my-information__form .form-group p{
+    color: inherit;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+.my-address{
+    width: 56%;
+    margin: 35px auto;
+}
+.my-address .my-address__desc{
+    width: 100%;
+}
+
+.my-address button.btn-red{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.my-address__desc .my-address__info{
+    width: 50%;
+}
+.my-address__desc .my-address__info h6{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.my-address .my-address__desc button.btn-red-border{
+    background: transparent;
+}
+
+/*the end personal-affice*/
 @media only screen and (max-width: 1200px){
     .baner-title h1{
         font-size: 2.75em;
@@ -1716,7 +1797,8 @@ a.gruop-social-buttons__google-plus:hover{
     .card-product .container,
     .recommend .container,
     .basket .container,
-    .contacts .container{
+    .contacts .container,
+    .personal-office .container{
         max-width: 100%;
     }
     .reviews .comements-cards {
@@ -1727,8 +1809,18 @@ a.gruop-social-buttons__google-plus:hover{
         content: '';
         height: 0;
     }
+    .my-address{
+        width: 70%;
+    }
+    .my-information__form, .change-passord_form{
+        width: 100%;
+    }
 }
-
+@media only screen and (max-width: 840px) and (min-width: 768px){
+    .personal-office .nav-link {
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width: 767px) {
     .container{
         max-width: 100%
@@ -1936,6 +2028,12 @@ a.gruop-social-buttons__google-plus:hover{
         width: 90%;
     }
     .modal-window .wrapper-fast-browsing .details-product{
+        width: 100%;
+    }
+    .my-information, .change-passord{
+        width: 75%;
+    }
+    .my-address{
         width: 100%;
     }
     
@@ -2309,5 +2407,12 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .modal-window{
         padding: 0 5px;
+    }
+    .my-information, .change-passord{
+        width: 100%;
+    }
+    .my-address .my-address__desc button.btn-red-border{
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
