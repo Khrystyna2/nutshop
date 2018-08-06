@@ -1578,7 +1578,7 @@ a.gruop-social-buttons__google-plus:hover{
 
 /*section personal-office*/
 .table-history-order{
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 35px;
 }
 .date-order h6, 
@@ -1591,6 +1591,17 @@ a.gruop-social-buttons__google-plus:hover{
     font-weight: 700;
     border-bottom: 1px solid #e2dcd1;
     padding-bottom: 15px;
+}
+.date-order span, 
+.number-order span,
+.product-order span,
+.status-order span,
+.total-order span{
+    margin-top: 8px;
+    border-bottom: 1px solid #e2dcd1;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 8px;
 }
 .table-history-order .date-order{
     width: 16%;
@@ -1606,6 +1617,9 @@ a.gruop-social-buttons__google-plus:hover{
 }
 .table-history-order .total-order{
     width: 26%;
+}
+.tabs-history-order{
+    display: none;
 }
 
 .my-information, .change-passord{
@@ -2068,6 +2082,29 @@ a.gruop-social-buttons__google-plus:hover{
     .reviews .comements-cards {
         margin-right: 20px;
         margin-bottom: 20px;
+    }
+    .table-history-order{
+        display: none !important;
+    }
+    .tabs-history-order{
+        display: block;
+    }
+    .tabs-history-order .nav.nav-pills{
+        flex-flow: row;
+    }
+    .tabs-history-order .nav-link{
+        font-size: 12px;
+        text-transform: none;
+        padding: 5px 8px;
+    }
+    .tabs-history-order .nav-pills .nav-link.active::before{
+        content: '\f0d7';
+        top: -5px;
+        left: 48%;
+    }
+    .tabs-history-order .tab-content{
+        text-align: center;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 620px) {
