@@ -844,7 +844,7 @@ button:focus{
     top: 0;
     left: 0;
     z-index: 99;
-    display: none;
+    /* display: none; */
 }
 .modal-window{
     position: fixed;
@@ -853,7 +853,7 @@ button:focus{
     height: 70%;
     top: calc(15%);
     left: calc(10%);
-    display: none;
+    /* display: none; */
     background: #fff;
     border: 3px solid #000;
     padding: 0 30px;
@@ -886,8 +886,12 @@ button:focus{
 .details-product ul li a{
     color: inherit;
 }
-.details-product ul li a::after{
+.details-product ul li::after{
     content: '/';
+    padding-left: 10px;
+}
+.details-product ul li:last-of-type::after{
+    content: '';
     padding-left: 10px;
 }
 .details-product h3{
@@ -1923,7 +1927,7 @@ a.gruop-social-buttons__google-plus:hover{
     .modal-window .wrapper-fast-browsing .details-product{
         width: 50%;
     }
-    .modal-window .wrapper-fast-browsing .counter .wrap-counter,
+    
     .modal-window .wrapper-fast-browsing .counter .wrap-counter span {
         font-size: 13px;
         padding-right: 10px;
@@ -2010,6 +2014,22 @@ a.gruop-social-buttons__google-plus:hover{
         height: 325px;
         right: -40px;
     }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter {
+        flex-flow: column;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter .wrap-counter__gruop1 {
+        margin: 10px 0;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter span {
+        font-size: 15px;
+        padding-right: 20px;
+        padding-left: 15px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter button.btn-red {
+        padding: 0 25px;
+        width: auto;
+        margin-right: 13px;
+    }
 }
 @media only screen and (max-width: 992px) {
     .wrapper-catalog .cards-2{
@@ -2055,6 +2075,26 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .btn-grey-border{
         padding: 0 10px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter span {
+        font-size: 15px;
+        padding-right: 20px;
+        padding-left: 15px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter button.btn-red {
+        padding: 0 25px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 930px) and (min-width:768px) {
+    .wrap-counter span{
+        font-size: 13px;
+        padding-left: 8px;
+        padding-right: 16px;
+    }
+    .wrap-counter button.btn-red{
+        padding: 0 20px;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 840px) and (min-width: 768px){
@@ -2301,14 +2341,17 @@ a.gruop-social-buttons__google-plus:hover{
     .cards-order{
         margin-bottom: 20px;
     }
-    
+    .tabs .nav-link{
+        margin-left: 0;
+        margin-right: 5px;
+    }
+ 
 } 
 
 @media only screen and (max-width: 768px) and (min-width: 600px){
     .contacts .container{
        padding: 0 55px;
     } 
-
 }
 @media only screen and (max-width: 717px) {
     .wrapper-catalog .cards-2{
@@ -2391,6 +2434,14 @@ a.gruop-social-buttons__google-plus:hover{
     .reviews .comements-cards {
         margin-right: 10px;
         margin-bottom: 10px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter span {
+        font-size: 13px;
+        padding-right: 15px;
+        padding-left: 7px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter button.btn-red{
+        padding: 0 15px;
     }
 }
 @media only screen and (max-width: 580px) {
@@ -2633,6 +2684,22 @@ a.gruop-social-buttons__google-plus:hover{
     .clearance-order__gruop-input button.btn-dark-grey {
         width: 37%;
     }
+    .wrap-counter{
+        flex-flow: column;
+    }
+    .wrap-counter .wrap-counter__gruop1{
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter span {
+        font-size: 15px;
+        padding-right: 18px;
+        padding-left: 12px;
+    }
+    .modal-window .wrapper-fast-browsing .counter .wrap-counter button.btn-red {
+        padding: 0 25px;
+    }
+
 }
 @media only screen and (max-width: 516px) {
     .wrapper-catalog .cards-2{
@@ -2660,13 +2727,6 @@ a.gruop-social-buttons__google-plus:hover{
     
     .wrapper-catalog .cards-2:nth-of-type(3n){
         margin-right: 6%;
-    }
-    .wrap-counter{
-        flex-flow: column;
-    }
-    .wrap-counter .wrap-counter__gruop1{
-        justify-content: space-around;
-        margin: 10px 0;
     }
 }
 @media only screen and (max-width: 465px) {
@@ -2739,5 +2799,8 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .clearance-order__title div.circle{
         margin-right: 15px;
+    }
+    .details-product .stars a{
+        font-size: 10px;
     }
 }
