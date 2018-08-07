@@ -1702,14 +1702,14 @@ a.gruop-social-buttons__google-plus:hover{
     color: #131313;
     font-size: 14px;
 }
-.clearance-order__guest, .clearance-order__delivery{
+.clearance-order__guest, .clearance-order__delivery, .clearance-order__guest-full, .clearance-order__delivery-full{
     padding: 35px 0;
     border-bottom: 1px solid #e7e7e7;
 }
 .clearance-order__payment{
     padding-top: 35px;
 }
-.clearance-order__title div{
+.clearance-order__title div.circle{
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -1718,7 +1718,7 @@ a.gruop-social-buttons__google-plus:hover{
     font-size: 16px;
     margin-right: 30px;
 }
-.clearance-order__title h4{
+.clearance-order__title h4, .clearance-order__guest-full_title h4{
     font-size: 22px;
     font-weight: 400;
 }
@@ -1730,11 +1730,16 @@ a.gruop-social-buttons__google-plus:hover{
     margin-bottom: 10px;
     width: 100%;
 }
+.clearance-order__gruop-input .form-group{
+    margin-bottom: 0;
+    width: 63%;
+}
 .clearance-order__gruop-input input.form-control{
-    width: 300px;
+    width: 100%;
 }
 .clearance-order__gruop-input input.form-control, .clearance-order__delivery_form input.form-control{
     border: 1px solid #a0a0a0;
+    height: 40px;
 }
 .btn-dark-grey{
     background: #454545;
@@ -1748,6 +1753,18 @@ a.gruop-social-buttons__google-plus:hover{
     border-radius: 5px;
     height: 40px;
     cursor: pointer;
+}
+.btn-grey-border{
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
 }
 .clearance-order__checkbox{
     margin-bottom: 25px;
@@ -1798,6 +1815,9 @@ a.gruop-social-buttons__google-plus:hover{
 .clearance-order__form button.btn-red{
     width: 100%;
 }
+.clearance-order__delivery-full .clearance-order__title{
+    align-items: flex-start;
+}
 
 .clearance-order__delivery_form{
     display: none;
@@ -1805,7 +1825,7 @@ a.gruop-social-buttons__google-plus:hover{
 .clearance-order__form{
     display: none;
 }
-.clearance-order__guest-full{
+.clearance-order__guest-full, .clearance-order__delivery-full{
     display: none;
 }
 
@@ -1912,8 +1932,15 @@ a.gruop-social-buttons__google-plus:hover{
         padding: 0 10px;
         width: auto;
     }
-    .clearance-order__gruop-input input.form-control{
-        width: 100%;
+    .clearance-order__gruop-input .form-group {
+        width: 62%;
+    }
+    .clearance-order__gruop-input .btn-dark-grey{
+        width: 35%;
+        padding: 0;
+    }
+    .clearance-order .container{
+        max-width: 100%;
     }
 }
 
@@ -2025,6 +2052,9 @@ a.gruop-social-buttons__google-plus:hover{
     .my-information__form, .change-passord_form{
         width: 100%;
     }
+    .btn-grey-border{
+        padding: 0 10px;
+    }
 }
 @media only screen and (max-width: 840px) and (min-width: 768px){
     .personal-office .nav-link {
@@ -2035,8 +2065,12 @@ a.gruop-social-buttons__google-plus:hover{
     .clearance-order__gruop-input{
         flex-flow: column;
     }
+    .clearance-order__gruop-input .form-group{
+        width: 100%;
+    }
     .clearance-order__gruop-input button.btn-dark-grey{
         margin-top: 15px;
+        width: 45%;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -2253,6 +2287,18 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .my-address{
         width: 100%;
+    }
+    .clearance-order__gruop-input {
+        flex-flow: row;
+    }
+    .clearance-order__gruop-input button.btn-dark-grey {
+        width: 32%;
+    }
+    .clearance-order__gruop-input .form-group {
+        width: 65%;
+    }
+    .cards-order{
+        margin-bottom: 20px;
     }
     
 } 
@@ -2576,6 +2622,16 @@ a.gruop-social-buttons__google-plus:hover{
         width: 100%;
         padding: 0;
     }
+    .clearance-order__guest_form, .clearance-order__delivery_form, .clearance-order__form {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .clearance-order__gruop-input .form-group {
+        width: 60%;
+    }
+    .clearance-order__gruop-input button.btn-dark-grey {
+        width: 37%;
+    }
 }
 @media only screen and (max-width: 516px) {
     .wrapper-catalog .cards-2{
@@ -2584,6 +2640,16 @@ a.gruop-social-buttons__google-plus:hover{
     
     .wrapper-catalog .cards-2:nth-of-type(3n){
         margin-right: 7%;
+    }
+    .clearance-order__guest-full, .clearance-order__delivery-full {
+        position: relative;
+        padding-bottom: 80px;
+    }
+    .change-guest-form, .change-delivery-form{
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        width: 50%;
     }
 }
 @media only screen and (max-width: 489px) {
@@ -2655,5 +2721,22 @@ a.gruop-social-buttons__google-plus:hover{
     .my-address .my-address__desc button.btn-red-border{
         padding: 8px 12px;
         font-size: 12px;
+    }
+    .clearance-order__gruop-input {
+        flex-flow: column;
+    }
+    .clearance-order__gruop-input .form-group {
+        width: 100%;
+    }
+    .clearance-order__gruop-input button.btn-dark-grey {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .clearance-order__form .gruop-radio{
+        padding: 25px 8px;
+    }
+    .clearance-order__title div.circle{
+        margin-right: 15px;
     }
 }

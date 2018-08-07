@@ -116,18 +116,20 @@ $('.phone, .phone-close').click(function(){
 			$('.clearance-order__delivery_form, .clearance-order__guest-full').show();
 		});
 		$('.clearance-order__delivery_button').click(function() {
-			$('.clearance-order__delivery_form').hide();
-			$('.clearance-order__form').show();
+			$('.clearance-order__delivery').hide();
+			$('.clearance-order__form, .clearance-order__delivery-full').show();
 		});
 
-		// $('.change-guest-form').click(function() {
-		// 	$('.clearance-order__guest-full').hide();
-		// 	$('.clearance-order__guest').show();
-		// });
+		$('.change-guest-form').click(function() {
+			$('.clearance-order__guest-full').hide();
+			$('.clearance-order__guest').show();
+			$('.clearance-order__delivery_form').hide();
+		});
+		$('.change-delivery-form').click(function() {
+			$('.clearance-order__delivery-full').hide();
+			$('.clearance-order__delivery').show();
+			$('.clearance-order__form').hide();
+		});
 
-
-		// $('.clearance-order__guest_button').click(function() {
-		// 	$('.clearance-order__guest_form').removeClass('show');
-		// 	$('.clearance-order__delivery_form').addClass('show');
 	
 });
