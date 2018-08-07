@@ -1799,6 +1799,16 @@ a.gruop-social-buttons__google-plus:hover{
     width: 100%;
 }
 
+.clearance-order__delivery_form{
+    display: none;
+}
+.clearance-order__form{
+    display: none;
+}
+.clearance-order__guest-full{
+    display: none;
+}
+
 .cards-order{
     border: 1px solid #efefef;
     border-radius: 5px;
