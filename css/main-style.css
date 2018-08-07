@@ -1814,6 +1814,7 @@ a.gruop-social-buttons__google-plus:hover{
 }
 .clearance-order__form button.btn-red{
     width: 100%;
+    color: #fff;
 }
 .clearance-order__delivery-full .clearance-order__title{
     align-items: flex-start;
