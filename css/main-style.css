@@ -1094,7 +1094,7 @@ button:focus{
 .wrapper-catalog .cards-2{
     /* width: 165px; */
     width: 210px;
-    height: 195px;
+    height: 215px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -1103,10 +1103,14 @@ button:focus{
     margin-top: 25px;
     margin-right: 15%;
 }
-.wrapper-catalog .cards-2 img.cards-2__img{
-    height: 40%;
-    width: auto;
-    max-width: 100;
+
+.cards-2__img{
+    width: 100%;
+    height: 50%;
+}
+.wrapper-catalog .cards-2 .cards-2__img img{
+    height: auto;
+    max-width: 100%;
 }
 .wrapper-catalog .cards-2:nth-of-type(3n){
     margin-right: 0;
