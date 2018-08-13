@@ -34,7 +34,6 @@ a:hover{
     cursor: pointer;
     display: inline-block;
     border: none;
-    transition: all 0.3s;
 }
 .btn-red:hover{
     -moz-transform: scale(1.05);
@@ -53,7 +52,6 @@ a:hover{
     font-weight: 700;
     cursor: pointer;
     display: inline-block;
-    transition: all 0.3s;
 }
 .btn-red-border:hover{
     -moz-transform: scale(1.05);
@@ -1783,7 +1781,6 @@ a.gruop-social-buttons__google-plus:hover{
     height: 40px;
     cursor: pointer;
     background: transparent;
-    transition: all 0.3s;
 }
 .clearance-order__checkbox{
     margin-bottom: 25px;
