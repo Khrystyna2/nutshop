@@ -886,14 +886,14 @@ button:focus{
 .details-product ul li a{
     color: inherit;
 }
-.details-product ul li::after{
+.details-product ul li a::after{
     content: '/';
     padding-left: 10px;
 }
-.details-product ul li:last-of-type::after{
+/* .details-product ul li:last-of-type::after{
     content: '';
     padding-left: 10px;
-}
+} */
 .details-product h3{
     font-size: 24px;
     padding: 10px 0;
