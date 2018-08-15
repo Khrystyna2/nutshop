@@ -1526,6 +1526,7 @@ a.gruop-social-buttons__google-plus{
     display: inline-block;
     margin-bottom: 10px;
     text-transform: uppercase;
+    transform: scale(1);
     transition: all 0.2s;
 }
 a.gruop-social-buttons__facebook:hover, 
@@ -2150,7 +2151,7 @@ a.gruop-social-buttons__google-plus:hover{
     }
 
     .menu{
-    position: fixed;
+    position: absolute;
     right: 0;
     background: #fff;
     flex-flow: column;
