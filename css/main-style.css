@@ -279,10 +279,15 @@ button:focus{
 #phone{
     background: #009e3b;
     width: 100%;
-    /* height: 50vh; */
+    border: 2px solid #fff;
     position: relative;
-    height: 0;
-    overflow: hidden;
+    /* height: 0;
+    overflow: hidden; */
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    transition: 1s ease;
+    z-index: 20;
 }
 #phone .ours-phone{
     font-size: 18px;
@@ -354,9 +359,10 @@ button:focus{
 }
 
 #phone.open{
-    border: 2px solid #fff;
-    height: auto;
-    overflow: visible;
+    /* border: 2px solid #fff; */
+    /* height: 100%;
+    overflow: visible; */
+    transform: translateY(0);
 }
 
 
