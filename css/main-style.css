@@ -1522,12 +1522,13 @@ a.gruop-social-buttons__google-plus{
     font-weight: 500;
     border-radius: 5px;
     width: 100%;
-    padding: 10px 0;
     display: inline-block;
     margin-bottom: 10px;
     text-transform: uppercase;
-    transform: scale(1);
-    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    transition: 0.1s;
 }
 a.gruop-social-buttons__facebook:hover, 
 a.gruop-social-buttons__twitter:hover, 
