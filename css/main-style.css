@@ -2158,7 +2158,7 @@ a.gruop-social-buttons__google-plus:hover{
     }
 
     .menu{
-    position: absolute;
+    position: fixed;
     right: 0;
     background: #fff;
     flex-flow: column;
