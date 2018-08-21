@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Font/GothamMedium.ttf');
+}
 body{
-    font-family: 'Gotham Pro', sans-serif;
+    font-family: 'Gotham', sans-serif;
     background-color: #fff;
     color: #121212;
 }
@@ -191,7 +195,7 @@ button:focus{
 
 .menu{
     font-size: 1.125em;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -206,6 +210,19 @@ button:focus{
     height: inherit;
     align-items: center;
     display: flex;
+    cursor: pointer;
+}
+.menu-item::after{
+    content: '\f107';
+    font-family: 'FontAwesome';
+    padding-left: 10px;
+    font-size: 22px;
+}
+.menu-item.red{
+    color: #c22938;
+}
+.menu-item.red::after{
+    content: '\f106';
 }
 
 .menu-item:last-of-type{
@@ -213,6 +230,9 @@ button:focus{
 }
 .menu-item a{
     color: inherit;
+}
+.menu-item a:hover{
+    color: #c22938;
 }
 /*попап меню*/
 .wrapper-menu{
@@ -222,30 +242,49 @@ button:focus{
     z-index: 2;
     top: 100%;
     left: 0;
-    height: 0;
-    overflow: hidden;
-}
-.menu-item:hover .wrapper-menu{
-    height: auto;
-    overflow: visible; border: 3px solid #2b2a32;
-}
-/* .wrapper-menu__categories h4, .wrapper-menu__popular h4{
-    margin-top: 30px;
-    padding-left: 50px;
-    font-size: 1.125em;
-    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
     font-weight: 500;
-    padding-bottom: 20px;
+    display: none;
+    transition: 0.3s;
 }
-.wrapper-menu__categories-img h3{
-    font-weight: bold;
-    font-size: 1.250em;
+.wrapper-menu.open{
+    display: block;
+}
+.close-wrapper-menu{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #121212;
+}
+
+a.wrapper-menu__btn {
+    margin: 35px auto;
+    display: block;
+    width: 19%;
+    color: #fff;
+    background: #c22938;
+    padding: 14px 38px;
     text-transform: uppercase;
-    text-align: center;
-    margin-top: 30px;
-} */
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+a.wrapper-menu__btn::after{
+    content: '\f0da';
+    font-family: 'FontAwesome';
+    padding-left: 10px;
+}
+a.wrapper-menu__btn:hover{
+    background:rgba(228, 155, 155, 0.9);
+}
+
+
 .wrapper-menu__categories-img{
-    width: 260px;
+    width: 360px;
     /* background-color: #f7f7f7; */
 }
 .wrapper-menu__categories-img img{
@@ -253,7 +292,7 @@ button:focus{
     display: block;
 }
 .wrapper-menu__categories{
-    width: 70%;
+    width: 60%;
     border-right: 1px solid #f7f7f7;
 }
 .wrapper-menu__categories{
@@ -264,14 +303,14 @@ button:focus{
     font-size: 1em;
     text-transform: none;
     list-style: none;
-    padding: 7px 0 ;
-    font-weight: normal;
+    padding: 4px 0 ;
+    /* font-weight: normal; */
 }
 .wrapper-menu__categories_categ ul li a{
     color: inherit;
 }
 .wrapper-menu__categories_categ ul li a:hover{
-    color: #009e3b;
+    color: #a72c3a;
 }
 /*попап меню*/
 
@@ -279,15 +318,10 @@ button:focus{
 #phone{
     background: #009e3b;
     width: 100%;
-    border: 2px solid #fff;
+    /* height: 50vh; */
     position: relative;
-    /* height: 0;
-    overflow: hidden; */
-    position: absolute;
-    top: 0;
-    transform: translateY(-100%);
-    transition: 1s ease;
-    z-index: 20;
+    height: 0;
+    overflow: hidden;
 }
 #phone .ours-phone{
     font-size: 18px;
@@ -359,10 +393,9 @@ button:focus{
 }
 
 #phone.open{
-    /* border: 2px solid #fff; */
-    /* height: 100%;
-    overflow: visible; */
-    transform: translateY(0);
+    border: 2px solid #fff;
+    height: auto;
+    overflow: visible;
 }
 
 
@@ -1080,6 +1113,15 @@ button:focus{
     text-align: left;
     font-size: 14px;
     padding-bottom: 15px;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+.hide-form{
+    display:none;
+}
+#review + button{
+    background:white;
 }
 .title-catalog .desc-catalog span{
     font-weight: 700;
@@ -1241,7 +1283,7 @@ button:focus{
     font-family: 'FontAwesome';
     padding-right: 5px;
 }
-.navigation .navigation-page a{
+.navigation .navigation-page a, .navigation .navigation-page span{
     color: #121212;
     padding: 3px 8px;
 }
@@ -1249,7 +1291,13 @@ button:focus{
     color: #a0a0a0;
     border: 1px solid #cdcdcd;
 }
-
+.navigation .navigation-page li.active span{
+    color: #a0a0a0;
+    border: 1px solid #cdcdcd;
+}
+.navigation-page{
+    margin:0 auto;
+}
 /*the end section catalog-2*/
 .recommend{
     padding-bottom: 20px;
@@ -1528,13 +1576,12 @@ a.gruop-social-buttons__google-plus{
     font-weight: 500;
     border-radius: 5px;
     width: 100%;
+    padding: 10px 0;
     display: inline-block;
     margin-bottom: 10px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    transition: 0.1s;
+    transform: scale(1);
+    transition: all 0.2s;
 }
 a.gruop-social-buttons__facebook:hover, 
 a.gruop-social-buttons__twitter:hover, 
@@ -2863,4 +2910,28 @@ a.gruop-social-buttons__google-plus:hover{
     .details-product .stars a{
         font-size: 10px;
     }
+}
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+    display: block;    /* undo display:none          */
+    height: 0;         /* height:0 is also invisible */
+
+}
+.tab-content > .active, .pill-content > .active {
+    height: auto;      /* let the content decide it  */
+} /* bootstrap hack end */
+.alert{
+    margin: 0;
+}
+.hidden{
+    display:none;
+}
+.table-history-order ~ .table-history-order h6 {
+    display: none;
+}
+.table-history-order ~ .table-history-order {
+    MARGIN: 0;
+}
+.checkout-cart .wrapper-error-404__img{
+    display:none !important;
 }

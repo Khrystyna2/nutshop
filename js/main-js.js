@@ -63,9 +63,9 @@ $('.phone, .phone-close').click(function(){
 		$('#phone').toggleClass('open');
 	});	
 	
-	$('.shopping-cart').click(function(){
-		$('.black-fill, .modal-window').toggleClass('show');
-	});
+	// $('.shopping-cart').click(function(){
+	// 	$('.black-fill, .modal-window').toggleClass('show');
+	// });
 	$('.black-fill').click(function() {
 		$('.modal-window').removeClass('show');
 		$('.black-fill').toggleClass('show');
@@ -93,15 +93,19 @@ $('.phone, .phone-close').click(function(){
 				min = input.data('min'),
 				max = input.data('max');
 				
-		input.val(min);
+		//input.val(min);
 		
 		btnUp.click(function(){
 			input.val() >= max ? $(this).prop("disabled",true) : input.val((input.val()*1) + step);
+			input.trigger('change');
+			input.change();
 			
 	 });
 		
 		btnDown.click(function(){
 			input.val() <= min ? $(this).prop("disabled",true) : input.val((input.val()*1) - step);
+            input.trigger('change');
+            input.change();
 		 });
 			
 		});
@@ -116,8 +120,19 @@ $('.phone, .phone-close').click(function(){
 			$('.clearance-order__delivery_form, .clearance-order__guest-full').show();
 		});
 		$('.clearance-order__delivery_button').click(function() {
-			$('.clearance-order__delivery').hide();
-			$('.clearance-order__form, .clearance-order__delivery-full').show();
+			var inputs = [];
+			$(this).parents('form').find('label.necessary + *').each(function(){
+				if($(this).val().length == 0) {
+                    inputs.push($(this).val());
+                }
+			});
+			console.log(inputs.length);
+			if(inputs.length){
+				alert('Заполните объязательные поля');
+			} else {
+                $('.clearance-order__delivery').hide();
+                $('.clearance-order__form, .clearance-order__delivery-full').show();
+            }
 		});
 
 		$('.change-guest-form').click(function() {
@@ -131,5 +146,31 @@ $('.phone, .phone-close').click(function(){
 			$('.clearance-order__form').hide();
 		});
 
-	
+		$('.checkout-cart .spinner input').on('change', function(){
+			$(this).parents('form').submit();
+		});
+
+		$('.show-coupon').click(function(e){
+			e.preventDefault();
+			$('.label-code').show();
+			$('.code-block').css('display', 'flex');
+		});
+
+		$('.next-check-step').click(function(){
+			var usrEmail = $('#usermail').val();
+			$('.guest-mail').text(usrEmail);
+			$('#input-payment-email').val(usrEmail);
+		});
+
+
+		//menu
+		$('.menu-item').click(function() {
+			$(this).find('.wrapper-menu').toggleClass('open');
+			$(this).toggleClass('red');
+		});
+		$('.close-wrapper-menu').click(function() {
+			$(this).find('.wrapper-menu').romoveClass('open');
+			$('.menu-item').removeClass('red');
+		});
+
 });
