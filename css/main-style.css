@@ -6,6 +6,7 @@ body{
     font-family: 'Gotham', sans-serif;
     background-color: #fff;
     color: #121212;
+    overflow-x: hidden;
 }
 p{
     margin: 0;
@@ -239,17 +240,19 @@ button:focus{
     position: absolute;
     width: 100%;
     background-color: #fff;
-    z-index: 2;
     top: 100%;
     left: 0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-weight: 500;
-    display: none;
-    transition: 0.3s;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
 }
 .wrapper-menu.open{
-    display: block;
+    height: 375px;
+    overflow: auto;
 }
 .close-wrapper-menu{
     position: absolute;
@@ -319,9 +322,12 @@ a.wrapper-menu__btn:hover{
     background: #009e3b;
     width: 100%;
     /* height: 50vh; */
-    position: relative;
-    height: 0;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
+    transform: translateY(-110%);
+    z-index: 2;
 }
 #phone .ours-phone{
     font-size: 18px;
@@ -394,8 +400,7 @@ a.wrapper-menu__btn:hover{
 
 #phone.open{
     border: 2px solid #fff;
-    height: auto;
-    overflow: visible;
+    transform: translateY(0)
 }
 
 
@@ -548,11 +553,13 @@ a.wrapper-menu__btn:hover{
     padding-top: 10px;
 }
 .cards-desc p{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 18px;
 } 
-.cards .cards-desc .price{
-    font-family: inherit;
-
+.cards-desc p span{
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .shopping-cart{
@@ -1171,13 +1178,13 @@ a.wrapper-menu__btn:hover{
 }
 
 .wrapper-catalog .cards-2 .cards-2-desc{
-    color: #009e3b;
+    color: #333;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
 }
 .wrapper-catalog .cards-2 .cards-2-desc span{
-    color: #121212;
+    color: #c22938;
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
@@ -1188,7 +1195,7 @@ a.wrapper-menu__btn:hover{
 /*section catalog-2*/
 .wrapper-catalog-2 .cards{
     width: 220px;
-    height: 290px;
+    height: 310px;
     margin-right: 8%;
 }
 .wrapper-catalog-2 .cards img{
@@ -1210,10 +1217,10 @@ a.wrapper-menu__btn:hover{
     height: 0;
     overflow: hidden;
 }
-.wrapper-catalog-2 .cards:hover .cards-button{
+/* .wrapper-catalog-2 .cards:hover .cards-button{
     height: auto;
     overflow: visible;
-}
+} це для показу кнопки подробно */
 
 .wrapper-catalog-2 .cards .cards-button span.btn-red{
     padding: 7px 18px;
@@ -2097,6 +2104,9 @@ a.gruop-social-buttons__google-plus:hover{
         width: auto;
         margin-right: 13px;
     }
+    a.wrapper-menu__btn{
+        width: 35%;
+    }
 }
 @media only screen and (max-width: 992px) {
     .wrapper-catalog .cards-2{
@@ -2198,20 +2208,20 @@ a.gruop-social-buttons__google-plus:hover{
         color: #c22938;
         font-size: 34px;
         position: absolute;
-        top: -85px;
+        top: 115px;
         right: 7%;
         height: auto;
         overflow: visible;
     }
 
     .menu{
-    position: fixed;
+    position: absolute;
     right: 0;
     background: #fff;
     flex-flow: column;
     height: auto;
-    align-items: flex-end;
-    width: 30%;
+    align-items: flex-start;
+    width: 100%;
     z-index: 100;
     /* height: 0;
     overflow: hidden; */
@@ -2219,15 +2229,23 @@ a.gruop-social-buttons__google-plus:hover{
     -webkit-transform: translateX(100%);
     -o-transform: translateX(100%);
     transform: translateX(100%);
-    -moz-transition: all 0.7s ease;
-    -webkit-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 
     }
     .menu-item{
-        padding: 7px 15px 7px 0;
+        padding: 7px 15px 7px 25px;
         position: relative;
+        width: 100%;
+    }
+    .menu-item::after {
+        content: '\f107';
+        font-family: 'FontAwesome';
+        position: absolute;
+        right: 4%;
+        font-size: 22px;
     }
     
     .menu-item:last-of-type{
@@ -2243,6 +2261,16 @@ a.gruop-social-buttons__google-plus:hover{
     overflow: visible; */
     }
 
+    .wrapper-menu__categories-img{
+        display: none;
+    }
+    .wrapper-menu__categories {
+        width: 100%;
+    }
+    a.wrapper-menu__btn{
+        width: 45%;
+        text-align: center;
+    }
     .delivery-info{
         flex-flow: column;
     }
@@ -2305,9 +2333,7 @@ a.gruop-social-buttons__google-plus:hover{
     .slider-comments .slick-arrow.slick-prev {
         left: 5px;
     }
-    .wrapper-menu{
-        display: none !important;
-    }
+    
     .wrapper-catalog .cards-2{
         margin: 25px 13%;
     }
@@ -2431,6 +2457,9 @@ a.gruop-social-buttons__google-plus:hover{
     .wrapper-catalog-2 .cards{
         width: 200px;
     }
+    .menu-icon{
+        top: 110px;
+    }
 }
 @media only screen and (max-width: 665px) {
     .wrapper-catalog .cards-2{
@@ -2467,6 +2496,9 @@ a.gruop-social-buttons__google-plus:hover{
         text-align: center;
         font-size: 14px;
     }
+    .menu-icon{
+        top: 105px;
+    }
 }
 @media only screen and (max-width: 620px) {
     .baner-menu a img {
@@ -2488,6 +2520,9 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .wrapper-catalog-2 .cards:nth-of-type(3n){
         margin-right: 5%;
+    }
+    .menu-icon{
+        top: 100px;
     }
 
 }
@@ -2543,10 +2578,15 @@ a.gruop-social-buttons__google-plus:hover{
     }
 
     .menu-icon{
-        top: -57px;
+        top: 95px;
     }
-    .menu{
-        width: 55%;
+    a.wrapper-menu__btn {
+        width: 65%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .close-wrapper-menu{
+        top: 0;
     }
     .baner-menu, .content-title, .content-info-title, .content-info-text, .baner-top{
         display: none;
@@ -2845,6 +2885,21 @@ a.gruop-social-buttons__google-plus:hover{
     .wrapper-catalog .cards-2:nth-of-type(3n){
         margin: 25px auto;
     }
+    .wrapper-menu__categories{
+        padding: 0;
+        padding-top: 10px;
+    }
+    .wrapper-menu__categories_categ{
+        flex-flow: column;
+    }
+    .wrapper-menu__categories_categ ul{
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper-menu.open{
+        height: 505px;
+        overflow: auto;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -2898,6 +2953,9 @@ a.gruop-social-buttons__google-plus:hover{
     }
     .clearance-order__gruop-input button.btn-dark-grey {
         width: 50%;
+    }
+    .menu-icon {
+        top: 87px;
     }
 }
 @media only screen and (max-width: 375px) {

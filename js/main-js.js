@@ -168,9 +168,5 @@ $('.phone, .phone-close').click(function(){
 			$(this).find('.wrapper-menu').toggleClass('open');
 			$(this).toggleClass('red');
 		});
-		$('.close-wrapper-menu').click(function() {
-			$(this).find('.wrapper-menu').romoveClass('open');
-			$('.menu-item').removeClass('red');
-		});
 
 });
