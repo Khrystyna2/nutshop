@@ -54,7 +54,7 @@ $(document).ready(function() {
 			});
 
 
-	$('.menu-icon').click(function(){
+	$('.menu-btn').click(function(){
 		$(this).toggleClass('open');
 		$(this).next('ul.menu').toggleClass('open');
 	});
@@ -167,6 +167,11 @@ $('.phone, .phone-close').click(function(){
 		$('.menu-item').click(function() {
 			$(this).find('.wrapper-menu').toggleClass('open');
 			$(this).toggleClass('red');
+		});
+
+		$('.menu-btn').on('click', function() {
+			$(this).toggleClass('menu-btn_active');
+			$('.menu').toggleClass('menu_active');
 		});
 
 });
