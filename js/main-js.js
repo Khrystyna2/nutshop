@@ -174,4 +174,8 @@ $('.phone, .phone-close').click(function(){
 			$('.menu').toggleClass('menu_active');
 		});
 
+		//carts
+		$('.carts').click(function() {
+			$('.carts-dropdown').toggleClass('open');
+		});
 });

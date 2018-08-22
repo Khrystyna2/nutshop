@@ -129,11 +129,41 @@
                                         />
                             </svg>
                         </a>
-                        <a href="basket.html" class="carts d-flex align-items-center">
+                        <div class="carts d-flex align-items-center">
                             <img src="icons/shopping-cart.svg" alt="shopping-cart">
                             <span>11 000 грн</span>
                             <div class="counter">2</div>
-                        </a>
+                            <div class="carts-dropdown">
+                                <div class="carts-dropdown__full">
+                                    <div class="carts-dropdown__wrap d-flex justify-content-between align-items-center">
+                                        <span>1</span>
+                                        <p>Белые очищенные орехи</p>
+                                        <span>150 грн</span>
+                                    </div>
+                                    <div class="carts-dropdown__wrap d-flex justify-content-between align-items-center">
+                                            <span>1</span>
+                                            <p>Белые очищенные орехи</p>
+                                            <span>150 грн</span>
+                                        </div>
+                                        <div class="carts-dropdown__wrap d-flex justify-content-between align-items-center">
+                                                <span>1</span>
+                                                <p>Белые очищенные орехи</p>
+                                                <span>150 грн</span>
+                                            </div>
+                                    <div class="carts-dropdown__sum d-flex justify-content-between align-items-center">
+                                        <span>Общая сумма</span>
+                                        <span>350 грн</span>
+                                    </div>
+                                </div>
+                                <div class="cadrs-dropdown__empty">
+                                    <div class="cards-gruop__btn d-flex justify-content-between align-items-center">
+                                        <a href="#" class="btn-red-border d-flex justify-content-center align-items-center">ИЗМЕНИТЬ</a>
+                                        <a href="#" class="btn-red d-flex justify-content-center align-items-center">ОФОРМИТЬ</a>
+                                    </div>
+                                    <a href="#">Продолжить покупки</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -357,9 +387,7 @@
             </div>
         </div>
     </header>
-
     <section id="catalog" class="catalog">
-
         <div class="modal-window">
             <div class="wrapper-fast-browsing d-flex">
                 <div class="img-product">
@@ -483,7 +511,6 @@
             </div>
         </div>
         <div class="black-fill"></div>
-
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-10 m-auto">
@@ -528,7 +555,7 @@
                                     </div>
                                     <div class="cards-desc">
                                         <p>Белые очищенные орехи</p>
-                                        <p class="price red">60 грн</p>
+                                        <p class="price red">60 <span>грн/кг</span></p>
                                     </div>
                                     <div class="shopping-cart">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
@@ -556,7 +583,7 @@
                                     <div class="cards-desc">
                                         <p>Набор орехов
                                             <br>для компании</p>
-                                        <p class="price red">60 грн</p>
+                                        <p class="price red">60 <span>грн/кг</span></p>
                                     </div>
                                     <div class="shopping-cart">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
@@ -583,7 +610,7 @@
                                             </div>
                                     <div class="cards-desc">
                                         <p>Белые очищенные орехи</p>
-                                        <p class="price red">60 грн</p>
+                                        <p class="price red">60 <span>грн/кг</span></p>
                                     </div>
                                     <div class="shopping-cart">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
@@ -611,7 +638,7 @@
                                     <div class="cards-desc">
                                         <p>Набор орехов
                                             <br> для компании</p>
-                                        <p class="price red">60 грн</p>
+                                        <p class="price red">60 <span>грн/кг</span></p>
                                     </div>
                                     <div class="shopping-cart">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
@@ -639,7 +666,7 @@
                                             </div>
                                     <div class="cards-desc">
                                         <p>Белые очищенные орехи</p>
-                                        <p class="price red">60 грн</p>
+                                        <p class="price red">60 <span>грн/кг</span></p>
                                     </div>
                                     <div class="shopping-cart">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
@@ -667,7 +694,7 @@
                                     <div class="cards-desc">
                                         <p>Набор орехов
                                             <br> для компании</p>
-                                        <p class="price red">60 грн</p>
+                                        <p class="price red">60 <span>грн/кг</span></p>
                                     </div>
                                     <div class="shopping-cart">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
@@ -834,7 +861,6 @@
         </div>
 
     </section>
-
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
