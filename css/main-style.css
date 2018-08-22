@@ -2402,6 +2402,10 @@ a.gruop-social-buttons__google-plus:hover{
             position: relative;
             width: 100%;
         }
+        .menu-item a{
+            width: 100%;
+            display: inline-block;
+        }
         .menu-item::after {
             content: '\f107';
             font-family: 'FontAwesome';
