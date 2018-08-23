@@ -3,7 +3,7 @@
     src: url('../fonts/Gotham-Font/GothamMedium.ttf');
 }
 body{
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
     background-color: #fff;
     color: #121212;
     overflow-x: hidden;
