@@ -15,7 +15,7 @@ p{
     font-weight: 400;
 }
 ul, li{
-   list-style: none;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -2057,6 +2057,74 @@ a.gruop-social-buttons__google-plus:hover{
 .cards-order__link{
     color: inherit;
     text-decoration: underline;
+}
+
+/*description-product*/
+.description-product{
+    font-size: 16px;
+}
+.description-product h1{
+    color: #131313;
+    font-size: 22px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.description-product h2{
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.description-product h3{
+    font-size: 18px;
+    margin-bottom:15px;
+    font-weight: 500;
+}
+.description-product p{
+    padding-bottom: 15px;
+}
+.description-product ol{
+    padding-left: 25px;
+}
+.description-product ol li{
+    padding-bottom: 15px;
+    list-style-type: decimal;
+    padding-left: 5px;
+}
+
+/*table-product*/
+.table-product{
+    width: 320px;
+    border: 2px solid #000;
+    padding: 4px;
+}
+.table-product h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+.table-product ul li{
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+.table-product ul li:first-of-type{
+    border-bottom: 6px solid #000;
+    border-top: 2px solid #000;
+    font-weight: 500;
+    font-size: 24px;
+}
+.table-product ul li:nth-of-type(2){
+    font-weight: 500;
+    font-size: 17px;
+}
+.table-product ul li.empty{
+    background: #000;
+    height: 10px;
+}
+.table-product ul li:last-of-type{
+    border-bottom: none;
+    border-top: 5px solid #000;
+    line-height: 16px;
+    font-size: 14px;
 }
 /*the end section clearance-order*/
 @media only screen and (max-width: 1200px){
